@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+  .button {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: yellow;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: black}
+
+.button:active {
+  background-color: #683d8e;
+  box-shadow: 0 5px #683d8e;
+  transform: translateY(4px);
+
+}
+
+.dropbtn {
+  background-color:black;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color:navy ; color:white;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:lightyellow;
+  color:black;
+}
+</style>
+</head>
+<body bgcolor="white" background="pic14.jpg" style="color:white;>
+<img  style =""src="pic1.JPG" height=100px width=350px >
+<img  style =""src="pic1.JPG" height=100px width=200px >
+<iframe height="100" width="1130" src="p1.html"></iframe><br>
+
+
+<div class="dropdown">
+  <button class="dropbtn">LOGIN / SIGNUP</button>
+  <div class="dropdown-content">
+  <a href="p3.html">NEW USER</a>
+  <a href="p4.html">OLD USER</a>
+  
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">ABOUT US</button>
+  <div class="dropdown-content">
+  <a href="p9.html">OUR CONTACT</a>
+  <a href="p10.html">OUR MOTIVE</a>
+  
+  </div>
+</div>
+
+<div class="dropdown">
+  <button class="dropbtn">CURRICULUM</button>
+  <div class="dropdown-content">
+  <a href="http://cbse.nic.in/" target="_blank">CBSE</a>
+ <a href="https://www.cisce.org/" target="_blank">ICSE</a>
+ 
+  
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">FEEDBACK</button>
+  <div class="dropdown-content">
+  <a href="p11.html" onclick="f()">FEEDBACK</a>
+ 
+  
+  </div>
+</div>
+<br>
+<img  style =""src="pic2.JPG" height=300px width=450px >
+<img  style =""src="pic3.JPG" height=300px width=450px >
+<img  style =""src="pic4.JPG" height=300px width=540px >
+
+<script type="text/javascript">
+  function f()
+  {
+    confirm("you are going to the FEEDBACK page");
+  }
+</script>
+
+</body>
+
+</html>

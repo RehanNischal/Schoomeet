@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<style>
+.button {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: yellow;
+  background-color: #008CBA;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: red}
+
+.button:active {
+  background-color: #683d8e;
+  box-shadow: 0 5px #683d8e;
+  transform: translateY(4px);
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: lightyellow;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+   background-color: lightyellow;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+   background-color: lightyellow;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+   background-color: lightyellow;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+div {
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding: 20px;
+}
+</style>
+<body background="pic14.jpg" style="color:black">
+
+
+
+<div>
+  <form >
+    <label >FIRST NAME</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." onfocus="f2()">
+
+    <label >Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." onfocus="f3()">
+
+    <label >EMAIL</label>
+    <input type="email" id="ename" name="lastname" placeholder="Your email.." onfocus="f4()">
+  
+  <label >MOBILE NUMBER</label>
+    <input type="number" id="mno" name="lastname" placeholder="Your mobile number.." onfocus="f5()">
+    <label >USERNAME</label>
+    <input type="text" id="uname" name="username" placeholder="Your username.." onfocus="f6()">
+    <label for="password">PASSWORD</label>
+    <input type="password" id="pwd" name="password" placeholder="Your password.." onfocus="f7()">
+    
+  </form>
+</div>
+<a href="p2.html" class="button" onclick="f1()">submit</a>
+<script type="text/javascript">
+  function f1()
+  {
+    confirm("the form was submitted");
+    }
+   function f2()
+  {
+    var x = document.getElementById("fname");
+    x.style.background = "lightgreen";
+  }
+  function f3()
+  {
+    var x = document.getElementById("lname");
+    x.style.background = "lightgreen";
+  }
+    function f4()
+  {
+    var x = document.getElementById("ename");
+    x.style.background = "lightgreen";
+  }
+    function f5()
+  {
+    var x = document.getElementById("mno");
+    x.style.background = "lightgreen";
+  }
+    function f6()
+  {
+    var x = document.getElementById("uname");
+    x.style.background = "lightgreen";
+  }
+    function f7()
+  {
+  var x = document.getElementById("pwd");
+    x.style.background = "lightgreen";
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+	h1,h2,h3{color : yellow;}
+</style>
+</head>
+<body background="pic11.jpg"  style ="color:WHITE;">
+<center>
+<h1>
+	FEEDBACK FORM
+ </h1>
+ <form " id="usrform">
+ <H2 STYLE="color:white;"> Name: <input type="text" name="usrname" id="ab" onclick="f1()"></H2>
+  <input type="submit">
+</form>
+<br>
+<textarea rows="10" cols="100" name="comment" form="usrform" onmouseover="f2()" id="ab1">
+Enter text here...</textarea>
+
+<center> <h3><a href ="main.html" target="_top" style="color:black" >go back</a></h3></center>
+<script>
+	function f1()
+	{
+		var x=document.getElementById("ab");
+		x.style.background = "yellow";
+	}
+	function f2()
+	{
+		var x=document.getElementById("ab1");
+		x.style.background = "pink";
+	}
+</script>
+</body>
+</html>

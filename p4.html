@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<style>
+.button {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: yellow;
+  background-color: #008CBA;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: red}
+
+.button:active {
+  background-color: #683d8e;
+  box-shadow: 0 5px #683d8e;
+  transform: translateY(4px);
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  background-color: lightyellow;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+   background-color: lightyellow;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+div {
+  border-radius: 5px;
+  background-color: lightgrey;
+  padding: 20px;
+}
+</style>
+<body background="pic14.jpg" style="color:black">
+
+
+
+<div>
+  <form >
+   
+    <label >USERNAME</label>
+    <input type="text" id="uname" name="username" placeholder="Your username.." onfocus="f1()">
+    <label >PASSWORD</label>
+    <input type="password" id="pwd" name="password" placeholder="Your password.." onfocus="f2()">
+    
+  </form>
+</div>
+<a href="main2.html" class="button" onclick="f3()" >login</a>
+<script>
+function f1() {
+    var x = document.getElementById("uname");
+    x.style.background = "lightgreen";
+}
+function f2() {
+    var x = document.getElementById("pwd");
+    x.style.background = "lightgreen";
+}
+function f3() {
+    confirm("are you sure you want to login?");
+}
+</script>
+</body>
+</html>
